@@ -1,0 +1,41 @@
+# Environment variables
+.env
+*.env
+# Node.js dependencies
+node_modules/
+npm-debug.log
+yarn.lock
+package-lock.json
+
+# Expo-specific files
+.expo/
+.expo-shared/
+# Large datasets & models
+data/
+*.csv
+*.xlsx
+*.json
+*.pkl
+*.h5
+*.model
+# Streamlit app cache
+.streamlit/
+# Virtual environment
+venv/
+.env
+
+# Compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter Notebook Checkpoints (if any)
+.ipynb_checkpoints/
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs & temp files
+*.log
+*.tmp
