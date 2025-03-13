@@ -85,16 +85,23 @@ def main():
     )
 
     # Main Post Generation Section
-    col1, col2, col3, = st.columns(3)
+    col1, col2, col3, col4 = st.columns(3)
     fs = FewShotPosts()
 
     with col1:
         selected_tag = st.selectbox("Title", options=fs.get_tags() )
 
     with col2:
+        custom_tags = st.text_input("Add Custom Tags (comma-separated)")
+    # Combine selected and custom tags
+    if custom_tags:
+        tags = [selected_tag] + [tag.strip() for tag in custom_tags.split(",")]
+    else:
+        tags = [selected_tag]
+    with col3:
         selected_length = st.selectbox("Length", options=length_options)
 
-    with col3:
+    with col4:
         selected_language = st.selectbox("Language", options=language_options)
 
     if st.button("Generate"):
