@@ -6,7 +6,7 @@ import os
 
 # Constants
 length_options = ["Short", "Medium", "Long"]
-language_options = ["English"]
+language_options = ["English", "French", "Spanish", "German", "Hindi"]
 tone_options = ["Professional", "Casual", "Inspirational", "Informative", "Human-like", "Conversational", "Storytelling", "Rhetorical-questions"]
 
 # File path for user preferences

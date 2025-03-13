@@ -18,8 +18,6 @@ def get_prompt(length, language, tag, tone=None, keywords=None, writing_sample=N
         1. Topic: {tag}
         2. Legnth: {length}
         3. Language: {language}
-        The script for the generated post should always be English
-
         '''
     # Add tone if specified
     if tone:
